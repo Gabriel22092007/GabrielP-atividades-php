@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    <h1>calculo de fatorial</h1>
+    <h1>fatorial</h1>
     <form method="post" action="">
-        <label for="numero">Digite um número:</label>
+        <label for="numero">escreva um numero</label>
         <input type="number" name="numero" id="numero" min="0" required>
         <button type="submit">Enviar</button>
     </form>

@@ -9,10 +9,10 @@
 
 <body>
 
-    <h1>Tabuada</h1>
+    <h1>tabuada</h1>
 
     <form method="post">
-        <label for="numero">escreva um numero:</label>
+        <label for="numero">escreva um numero</label>
         <input type="number" name="numero" id="numero" required>
         <button type="submit">Enviar</button>
     </form>
@@ -21,7 +21,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $numero = $_POST['numero'];
 
-        echo "<h2>Tabuada do $numero:</h2>";
+        echo "<h2>tabuada do $numero:</h2>";
         echo "<ul>";
         for ($i = 1; $i <= 10; $i++) {
             $resultado = $numero * $i;

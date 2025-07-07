@@ -11,7 +11,7 @@
     <h1>par ou impar</h1>
     
     <form method="post">
-        <label for="numero">Escreva um numero:</label>
+        <label for="numero">escreva um numero:</label>
         <input type="number" name="numero" id="numero" required>
         <button type="submit">Enviar</button>
     </form>
@@ -21,9 +21,9 @@
         $numero = $_POST['numero'];
         
         if ($numero % 2 == 0) {
-            $resultado = "O número $numero é PAR.";
+            $resultado = "O número $numero é Par.";
         } else {
-            $resultado = "O número $numero é ÍMPAR.";
+            $resultado = "O número $numero é Ímpar.";
         }
         
         echo "<p>$resultado</p>";

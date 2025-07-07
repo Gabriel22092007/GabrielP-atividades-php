@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>verificar o numero</h1>
+    <h1>positivo, negativo ou zero</h1>
 
     <form method="post">
         <label for="numero">escreva um numero:</label>
@@ -21,11 +21,11 @@
         $numero = $_POST['numero'];
 
         if ($numero > 0) {
-            $resultado = "O número <strong>$numero</strong> é <strong>POSITIVO</strong>.";
+            $resultado = "O número <strong>$numero</strong> é <strong>positivo</strong>.";
         } elseif ($numero < 0) {
-            $resultado = "O número <strong>$numero</strong> é <strong>NEGATIVO</strong>.";
+            $resultado = "O número <strong>$numero</strong> é <strong>negativo</strong>.";
         } else {
-            $resultado = "O número é <strong>ZERO</strong>.";
+            $resultado = "O número é <strong>zero</strong>.";
         }
 
         echo "<p>$resultado</p>";
