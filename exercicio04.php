@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    <h1>Calcular Fatorial</h1>
+    <h1>calculo de fatorial</h1>
     <form method="post" action="">
         <label for="numero">Digite um número:</label>
         <input type="number" name="numero" id="numero" min="0" required>
-        <button type="submit">Calcular</button>
+        <button type="submit">Enviar</button>
     </form>
 
     <?php
