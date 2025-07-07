@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Verificar se o número é par ou ímpar</h1>
+    <h1>par ou impar</h1>
     
     <form method="post">
         <label for="numero">Escreva um numero:</label>
