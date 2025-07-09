@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>escrever divisores de um numero</title>
 </head>
+
 <body>
-    <h1>escrever divisores de um numero</h1>
+    <h1>divisor de numero</h1>
     <form method="post" action="">
-        <label for="numero">escreva um numero inteiro positivo:</label>
+        <label for="numero">escreva um numero positivo</label>
         <input type="number" name="numero" id="numero" min="1" required>
-        <button type="submit">ver divisores</button>
+        <button type="submit">Enviar</button>
     </form>
 
     <?php
@@ -17,9 +19,8 @@
         $numero = isset($_POST['numero']) ? (int)$_POST['numero'] : 0;
 
         if ($numero <= 0) {
-            echo "<p>Por favor, digite um número inteiro positivo.</p>";
         } else {
-            echo "<p>Divisores de $numero: ";
+            echo "<p>divisor de $numero: ";
 
             for ($i = 1; $i <= $numero; $i++) {
                 if ($numero % $i == 0) {
@@ -29,9 +30,9 @@
                     }
                 }
             }
-            echo "</p>";
         }
     }
     ?>
 </body>
+
 </html>

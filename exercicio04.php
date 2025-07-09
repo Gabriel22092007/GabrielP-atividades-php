@@ -21,12 +21,11 @@
 
         $fatorial = 1;
         if ($numero < 0) {
-            echo "<p>O fatorial não está definido para números negativos.</p>";
         } else {
             for ($i = 1; $i <= $numero; $i++) {
                 $fatorial *= $i;
             }
-            echo "<p>O fatorial de $numero é: $fatorial</p>";
+            echo "<p>fatorial de $numero é $fatorial</p>";
         }
     }
     ?>

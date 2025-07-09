@@ -20,14 +20,11 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $numero = $_POST['numero'];
-
-        echo "<h2>tabuada do $numero:</h2>";
-        echo "<ul>";
+        echo "<h2>tabuada do $numero</h2>";
         for ($i = 1; $i <= 10; $i++) {
             $resultado = $numero * $i;
             echo "<li>$numero x $i = $resultado</li>";
         }
-        echo "</ul>";
     }
     ?>
 </body>

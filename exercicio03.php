@@ -11,7 +11,7 @@
     <h1>positivo, negativo ou zero</h1>
 
     <form method="post">
-        <label for="numero">escreva um numero:</label>
+        <label for="numero">escreva um numero</label>
         <input type="number" name="numero" id="numero" required>
         <button type="submit">Enviar</button>
     </form>
@@ -21,11 +21,11 @@
         $numero = $_POST['numero'];
 
         if ($numero > 0) {
-            $resultado = "O número <strong>$numero</strong> é <strong>positivo</strong>.";
+            $resultado = "<strong>$numero</strong> é <strong>positivo</strong>";
         } elseif ($numero < 0) {
-            $resultado = "O número <strong>$numero</strong> é <strong>negativo</strong>.";
+            $resultado = "<strong>$numero</strong> é <strong>negativo</strong>";
         } else {
-            $resultado = "O número é <strong>zero</strong>.";
+            $resultado = "é <strong>zero</strong>";
         }
 
         echo "<p>$resultado</p>";
