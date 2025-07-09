@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>escrever divisores de um numero</title>
+    <title>Exibir todos os divisores de um número</title>
 </head>
 
 <body>

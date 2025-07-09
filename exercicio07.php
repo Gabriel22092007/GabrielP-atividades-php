@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ver se o numero é perfeito</title>
+    <title>Verificar se o número é perfeito (soma dos divisores = número)</title>
 </head>
 
 <body>
@@ -20,26 +20,26 @@
 
         if ($numero <= 0) {
         } else {
-            $somaDivisores = 0;
-            $divisores = [];
+            $divisortotal = 0;
+            $divisor = [];
 
             for ($i = 1; $i <= $numero / 2; $i++) {
                 if ($numero % $i == 0) {
-                    $somaDivisores += $i;
-                    $divisores[] = $i;
+                    $divisortotal += $i;
+                    $divisor[] = $i;
                 }
             }
 
-            if ($somaDivisores == $numero) {
+            if ($divisortotal == $numero) {
                 echo "<div class='resultado perfeito'>";
                 echo "<p><strong>$numero</strong> é perfeito</p>";
-                echo "<p>divisores proprios = " . implode(', ', $divisores) . "</p>";
-                echo "<p>soma dos divisores: $somaDivisores</p>";
+                echo "<p>divisores proprios: " . implode(', ', $divisor) . "</p>";
+                echo "<p>soma dos divisores: $divisortotal</p>";
             } else {
                 echo "<div class='resultado imperfeito'>";
                 echo "<p><strong>$numero</strong> não é perfeito</p>";
-                echo "<p>divisores proprios: " . implode(', ', $divisores) . "</p>";
-                echo "<p>soma dos divisores: $somaDivisores</p>";
+                echo "<p>divisores proprios: " . implode(', ', $divisor) . "</p>";
+                echo "<p>soma dos divisores: $divisortotal</p>";
             }
         }
     }

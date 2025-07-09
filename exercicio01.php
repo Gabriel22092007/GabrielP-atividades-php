@@ -21,9 +21,9 @@
         $numero = $_POST['numero'];
 
         if ($numero % 2 == 0) {
-            $resultado = "$numero é Par";
+            $resultado = "$numero é par";
         } else {
-            $resultado = "$numero é Impar";
+            $resultado = "$numero é impar";
         }
 
         echo "<p>$resultado</p>";

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>numeros amigos</title>
+    <title>Verificar se o número é perfeito (soma dos divisores = número)</title>
 </head>
 
 <body>
@@ -23,21 +23,21 @@
         $num1 = isset($_POST['numero1']) ? (int)$_POST['numero1'] : 0;
         $num2 = isset($_POST['numero2']) ? (int)$_POST['numero2'] : 0;
 
-        function somaDivisores($n)
+        function divisortotal($n)
         {
-            $soma = 0;
+            $total = 0;
             for ($i = 1; $i <= $n / 2; $i++) {
                 if ($n % $i == 0) {
-                    $soma += $i;
+                    $total += $i;
                 }
             }
-            return $soma;
+            return $total;
         }
 
-        $somaDivNum1 = somaDivisores($num1);
-        $somaDivNum2 = somaDivisores($num2);
+        $totaldiv1 = divisortotal($num1);
+        $totaldiv2 = divisortotal($num2);
 
-        if ($somaDivNum1 == $num2 && $somaDivNum2 == $num1) {
+        if ($totaldiv1 == $num2 && $totaldiv2 == $num1) {
             echo "<p>$num1 e $num2 <strong>é amigos</strong></p>";
         } else {
             echo "<p>$num1 e $num2 <strong>não é amigos</strong></p>";

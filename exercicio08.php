@@ -17,16 +17,16 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $numero = isset($_POST['numero']) ? (int)$_POST['numero'] : 0;
     
-    $contarPares = 0;
+    $contapar = 0;
     
     if ($numero > 0) {
         for ($i = 1; $i <= $numero; $i++) {
             if ($i % 2 == 0) {
-                $contarPares++;
+                $contapar++;
             }
         }
         
-        echo "tem $contarPares numeros pares entre 1 e $numero";
+        echo "tem $contapar numeros pares entre 1 e $numero";
     } else {
     }
 } else {
